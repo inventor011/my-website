@@ -224,67 +224,6 @@ img {
   text-transform: lowercase;
 }
 
-/* ── Subject Cards ───────────────────────────────────── */
-
-.subject-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: var(--bg-raised);
-  transition: border-color var(--transition), transform var(--transition);
-}
-
-.subject-card:hover {
-  border-color: var(--accent-dim);
-  transform: translateY(-3px);
-}
-
-.subject-card-top {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  list-style: none;
-}
-
-.subject-card-top::-webkit-details-marker { display: none; }
-
-.subject-files {
-  list-style: none;
-  border-top: 1px solid var(--border);
-}
-
-.subject-files li + li {
-  border-top: 1px solid var(--border);
-}
-
-.subject-files a {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.75rem 1.25rem;
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  transition: color var(--transition), background var(--transition);
-}
-
-.subject-files a:hover {
-  color: var(--accent);
-  background: var(--bg-hover);
-}
-
-.subject-file-icon {
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
-  opacity: 0.45;
-}
-
-.subject-files a:hover .subject-file-icon {
-  opacity: 0.8;
-}
-
 /* ── Gallery Grid ────────────────────────────────────── */
 
 .gallery-grid {

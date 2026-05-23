@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompts — Ayush</title>
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    .page-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      transition: color var(--transition);
+    }
+    .page-back:hover { color: var(--accent); }
+    .page-back svg { width: 16px; height: 16px; }
+
+    .page-hero {
+      padding: 7rem clamp(1.5rem, 4vw, 3rem) 3rem;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    .page-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+    .page-hero p { color: var(--text-muted); font-size: 1.05rem; }
+
+    .file-list {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 clamp(1.5rem, 4vw, 3rem) 5rem;
+      list-style: none;
+    }
+    .file-item a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.1rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-raised);
+      transition: border-color var(--transition), transform var(--transition), background var(--transition);
+    }
+    .file-item + .file-item { margin-top: 0.75rem; }
+    .file-item a:hover {
+      border-color: var(--accent-dim);
+      transform: translateX(4px);
+      background: var(--bg-hover);
+    }
+    .file-item-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .file-item-icon svg { width: 18px; height: 18px; color: var(--text-muted); }
+    .file-item a:hover .file-item-icon svg { color: var(--accent); }
+    .file-item-info h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.15rem;
+    }
+    .file-item-info p { font-size: 0.82rem; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="../../" class="nav-logo">ayush</a>
+    <div class="nav-links">
+      <a href="../../#artifacts">Artifacts</a>
+      <a href="../../#subjects">Subjects</a>
+      <a href="../../#gallery">Gallery</a>
+      <a href="../../#about">About</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-hero">
+      <a href="../../#artifacts" class="page-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"/>
+          <polyline points="12 19 5 12 12 5"/>
+        </svg>
+        Artifacts / Prompts
+      </a>
+      <h1>Prompts</h1>
+      <p>System prompts and instruction files I've written</p>
+    </div>
+
+    <ul class="file-list">
+
+      <li class="file-item">
+        <a href="how-to-teach.html" target="_blank">
+          <div class="file-item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+          </div>
+          <div class="file-item-info">
+            <h3>How to Teach</h3>
+            <p>An instruction file for AI teaching systems</p>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Ayush</p>
+  </footer>
+
+</body>
+</html>
